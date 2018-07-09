@@ -62,7 +62,7 @@
             android:layout_weight="1"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:background="#eaf6f6"
             android:orientation="vertical">
 
@@ -83,7 +83,7 @@
             android:layout_height="150dp"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:background="#eaf6f6"
             android:orientation="vertical">
 
@@ -112,7 +112,7 @@
             android:layout_weight="1"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:background="#eaf6f6"
             android:orientation="vertical">
 
@@ -133,7 +133,7 @@
             android:layout_height="150dp"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:background="#eaf6f6"
             android:orientation="vertical">
 
@@ -150,22 +150,12 @@
 
     </LinearLayout>
 
-    <RelativeLayout
-        android:id="@+id/homel"
+    <ImageView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_marginTop="40dp"
-        android:background="#878387"
-        android:gravity="bottom"
-        android:orientation="horizontal">
+        android:layout_marginTop="30dp"
+        android:layout_height="5dp"
+        android:background="#f76b8a"/>
 
-        <Button
-            android:id="@+id/homebtn"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/home" />
-    </RelativeLayout>
+
 
 </LinearLayout>
