@@ -1,6 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/airl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eaf6f6">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/templl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="当前温度"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tempnumber"
+            android:textSize="48dp"
+            android:textStyle="bold"
+            android:text="16℃"
+            android:gravity="center"
+            android:textColor="#66bfbf"/>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#f76b8a"/>
+
+        <com.example.keshe.notathome.LineGraphicView
+            android:id="@+id/line_graphic_temp"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1">
+
+        </com.example.keshe.notathome.LineGraphicView>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/temprefresh"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/normal_button_selector"
+                android:text="刷新"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/homel2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#878387"
+        android:layout_marginTop="80dp"
+        android:gravity="bottom"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/homebtn2"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/home" />
+    </RelativeLayout>
+
+</LinearLayout>

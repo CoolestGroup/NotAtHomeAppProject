@@ -1,6 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#eaf6f6">
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="灯光控制"
+            android:textColor="#000000"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="5dp"
+            android:background="#f76b8a"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#eaf6f6"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="客厅"
+            android:textSize="28dp"
+            android:textColor="#4f4d4f"/>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="314dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            tools:layout_editor_absoluteX="250dp"
+            tools:layout_editor_absoluteY="64dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#66bfbf"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="主卧"
+            android:textSize="28dp"
+            android:textColor="#4f4d4f"/>
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="314dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            tools:layout_editor_absoluteX="250dp"
+            tools:layout_editor_absoluteY="64dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#eaf6f6"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="次卧"
+            android:textSize="28dp"
+            android:textColor="#4f4d4f"/>
+
+        <SeekBar
+            android:id="@+id/seekBar3"
+            android:layout_width="314dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            tools:layout_editor_absoluteX="250dp"
+            tools:layout_editor_absoluteY="64dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#66bfbf"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="书房"
+            android:textSize="28dp"
+            android:textColor="#4f4d4f"/>
+
+        <SeekBar
+            android:id="@+id/seekBar4"
+            android:layout_width="314dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            tools:layout_editor_absoluteX="250dp"
+            tools:layout_editor_absoluteY="64dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/homelll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#878387"
+        android:layout_marginTop="40dp"
+        android:gravity="bottom"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/homebtn3"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/home" />
+    </RelativeLayout>
+
+</LinearLayout>

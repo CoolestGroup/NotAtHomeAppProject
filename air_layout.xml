@@ -1,6 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/airl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eaf6f6">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/airpm25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PM2.5含量:(当前)"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:textColor="#66bfbf"/>
+
+        <com.example.keshe.notathome.LineGraphicView
+            android:id="@+id/line_graphic_pm25"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1">
+
+        </com.example.keshe.notathome.LineGraphicView>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:id="@+id/pm25refresh"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/normal_button_selector"
+                android:text="刷新"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="#f76b8a"/>
+
+    <LinearLayout
+        android:id="@+id/airpm10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/text10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PM10含量（当前）："
+            android:gravity="center"
+            android:textSize="24dp"
+            android:textColor="#66bfbf"/>
+
+        <com.example.keshe.notathome.LineGraphicView
+            android:id="@+id/line_graphic_pm10"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1">
+
+        </com.example.keshe.notathome.LineGraphicView>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/pm10refresh"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/normal_button_selector"
+                android:text="刷新"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="#f76b8a"/>
+
+    <RelativeLayout
+        android:id="@+id/homel"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#878387"
+        android:gravity="bottom"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/homebtn"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/home" />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
