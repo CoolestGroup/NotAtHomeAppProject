@@ -6,11 +6,14 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+
+import static android.content.ContentValues.TAG;
 
 public class LoginActivity extends Activity {
 
@@ -28,10 +31,12 @@ public class LoginActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_layout);
+
         edname = (EditText) findViewById(R.id.accountEditText);
         edpassword = (EditText) findViewById(R.id.pwdEditText);
         btregister = (Button) findViewById(R.id.gotoRegin);
         btlogin = (Button) findViewById(R.id.loginConfirm);
+
         db = SQLiteDatabase.openOrCreateDatabase(LoginActivity.this.getFilesDir().toString()
                 + "/test.dbs", null);
 
@@ -85,12 +90,10 @@ public class LoginActivity extends Activity {
                 }else{
 
                     new AlertDialog.Builder(LoginActivity.this).setTitle("正确").setMessage("成功登录").show();
-
-                    Intent intent1 = new Intent();
-                    intent1.setClass(LoginActivity.this, MainActivity.class);
+                    Log.d(TAG, "isUserinfo: aaa");
+                    Intent intent1 = new Intent(LoginActivity.this,MainActivity.class);
                     startActivity(intent1);
                     finish();
-
                     return true;
                 }
 

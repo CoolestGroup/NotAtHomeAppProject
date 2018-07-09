@@ -60,7 +60,6 @@ public class ReginActivity extends Activity {
                                 Intent in = new Intent();
                                 in.setClass(ReginActivity.this,LoginActivity.class);
                                 startActivity(in);
-                                // 销毁当前activity
                                 finish();
                             }
                         };
@@ -78,6 +77,16 @@ public class ReginActivity extends Activity {
                             .setTitle("帐号密码不能为空").setMessage("帐号密码不能为空")
                             .setPositiveButton("确定", null);
                 }
+            }
+        });
+
+        reginCancelbt.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent();
+                in.setClass(ReginActivity.this,LoginActivity.class);
+                startActivity(in);
+                finish();
             }
         });
 
