@@ -98,12 +98,12 @@ public class ReginActivity extends Activity {
         LoginActivity main = new LoginActivity();
         db = SQLiteDatabase.openOrCreateDatabase(this.getFilesDir().toString()
                 + "/test.dbs", null);
-        main.db = db;
+        //main.db = db;
         try {
             db.execSQL(str, new String[] { name, password });
             return true;
         } catch (Exception e) {
-            main.createDb();
+            //main.createDb();
         }
         return false;
     }
