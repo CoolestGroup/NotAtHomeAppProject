@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity{
         Button lightBtn = (Button)findViewById(R.id.lightbtn);
         Button doorBtn=(Button)findViewById(R.id.doorbtn);
         Button airBtn =(Button)findViewById(R.id.airbtn);
-        Button homeBtn=(Button)findViewById(R.id.homebtn);
+       // Button homeBtn=(Button)findViewById(R.id.homebtn);
 
         Button refreshBtn=(Button)findViewById(R.id.refresh);
 
@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
-        homeBtn.setOnClickListener(new View.OnClickListener() {
+       /* homeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // TODO Auto-generated method stub
@@ -136,7 +136,7 @@ public class MainActivity extends AppCompatActivity{
                 startActivity(gotoHome);
 
             }
-        });
+        });*/
 
     }
 }

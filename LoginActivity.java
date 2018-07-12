@@ -65,6 +65,7 @@ public class LoginActivity extends Activity {
         @Override
         public void onClick(View v) {
             // TODO Auto-generated method stub
+            System.out.println("start to 输入");
             String name = edname.getText().toString();
             String password = edpassword.getText().toString();
             if (name.equals("") || password.equals("")) {
@@ -73,7 +74,20 @@ public class LoginActivity extends Activity {
                         .setMessage("帐号或密码不能空").setPositiveButton("确定", null)
                         .show();
             } else {
-                isUserinfo(name, password);
+                //isUserinfo(name, password);
+                System.out.println("start to check");
+                if(DBHelper.check(name, password)) {
+                    //
+                    new AlertDialog.Builder(LoginActivity.this).setTitle("正确").setMessage("成功登录").show();
+                    Intent intent1 = new Intent(LoginActivity.this,MainActivity.class);
+                    startActivity(intent1);
+                    finish();
+                } else {
+                    new AlertDialog.Builder(LoginActivity.this).setTitle("错误")
+                            .setMessage("帐号或密码错误！").setPositiveButton("确定", null)
+                            .show();
+                }
+
             }
         }
 

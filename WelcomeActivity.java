@@ -26,6 +26,7 @@ public class WelcomeActivity extends AppCompatActivity {
                 finish();
             }
         };
+        System.out.println("hi");
         timer.schedule(task, 1000 * 3); //等待3秒
     }
 
